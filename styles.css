@@ -46,8 +46,6 @@ h3{font-size:1.75rem;letter-spacing:.015em;margin-bottom:.5em;font-weight:600}
 .nav a{text-decoration:none;color:var(--ink);font-size:.95rem;padding:.35rem 0;border-bottom:2px solid transparent}
 .nav a:hover{border-color:var(--sabbia)}
 .nav a[aria-current="page"]{border-color:var(--bordeaux);color:var(--bordeaux)}
-.nav .btn{padding:.55rem 1.1rem;border-bottom:0;color:#fff}
-.nav .btn:hover,.nav a.btn[aria-current="page"]{color:#fff}
 
 /* buttons */
 .btn{display:inline-block;background:var(--bordeaux);color:#fff;text-decoration:none;font-family:var(--text);font-weight:600;font-size:1rem;padding:.9rem 1.6rem;border:2px solid var(--bordeaux);border-radius:3px;cursor:pointer;line-height:1.2;transition:background .15s}
@@ -72,22 +70,6 @@ section{padding-block:clamp(3rem,7vw,5.5rem)}
 .intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(1.5rem,5vw,4rem);align-items:start}
 .intro h2{margin-bottom:0}
 
-/* referto */
-.referto-list{list-style:none;margin:2rem 0 0;padding:0;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:clamp(1.5rem,5vw,4rem);align-items:start}
-.referto-list li{display:contents}
-.referto-list button{grid-column:1;text-align:left;background:transparent;border:0;border-top:1px solid var(--carne-deep);padding:1rem .25rem;cursor:pointer;font:inherit;color:var(--ink);display:flex;flex-direction:column;gap:.15rem;width:100%}
-.referto-list li:last-child button{border-bottom:1px solid var(--carne-deep)}
-.referto-list .organo{font-family:var(--display);text-transform:uppercase;font-size:clamp(1.7rem,3.4vw,2.4rem);letter-spacing:.02em;line-height:1;color:var(--ink);transition:color .15s,padding .15s}
-.referto-list .istituzione{font-size:.98rem;color:var(--muted)}
-.referto-list button:hover .organo{color:var(--bordeaux)}
-.referto-list button[aria-expanded="true"]{background:var(--paper);box-shadow:inset 6px 0 0 var(--bordeaux);padding-left:1.25rem}
-.referto-list button[aria-expanded="true"] .organo{color:var(--bordeaux)}
-.referto-list button[aria-expanded="true"] .istituzione{color:var(--ink)}
-.referto-list .panel{grid-column:2;grid-row:1 / span 9;background:var(--paper);padding:clamp(1rem,2.5vw,2rem);position:sticky;top:1rem;align-self:start}
-.referto-list .panel[hidden]{display:none}
-.panel .art{height:clamp(16rem,34vw,25rem);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
-.panel .art img{max-height:100%;width:auto;max-width:100%;object-fit:contain}
-.panel p{margin-bottom:0}
 
 /* two paths */
 .paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,3vw,2rem)}
@@ -179,11 +161,6 @@ textarea{min-height:7rem;resize:vertical}
 
 @media (max-width:52rem){
   .hero .wrap,.intro,.split,.split.rev,.quote .wrap,.cta-band .wrap,.authors,.foot-grid,.paths{grid-template-columns:minmax(0,1fr)}
-  .referto-list{grid-template-columns:minmax(0,1fr)}
-  .referto-list li{display:block}
-  .referto-list button{grid-column:auto}
-  .referto-list .panel{grid-column:auto;grid-row:auto;position:static;margin:0 0 .5rem;border-left:6px solid var(--bordeaux)}
-  .referto-list .panel .art{height:15rem}
   .form-grid{grid-template-columns:minmax(0,1fr)}
   .parts li{grid-template-columns:minmax(0,1fr);gap:.5rem}
   .spec{grid-template-columns:minmax(0,1fr);gap:.1rem}
