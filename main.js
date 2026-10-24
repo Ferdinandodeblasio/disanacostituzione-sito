@@ -14,7 +14,6 @@
     buttons.forEach(function (b) {
       b.addEventListener('click', function () { open(b); });
     });
-    var desktop = window.matchMedia('(min-width: 52.01rem)');
     var first = buttons[0];
     if (first) open(first);
   }
