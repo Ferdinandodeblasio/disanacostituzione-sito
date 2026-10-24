@@ -63,7 +63,7 @@ h3{font-size:1.75rem;letter-spacing:.015em;margin-bottom:.5em;font-weight:600}
 .hero h1 span{display:block}
 .hero .tag{font-family:var(--display);font-size:clamp(1.35rem,2.6vw,1.9rem);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:1.5rem 0 1.25rem;display:inline-block;border-bottom:6px solid var(--sabbia);padding-bottom:.2rem;line-height:1.1}
 .hero-art{background:#fff;border-radius:2px;padding:clamp(1rem,3vw,2rem);position:relative}
-.hero-art img{width:100%;max-height:44rem;object-fit:contain}
+.hero-art img{width:100%;height:auto}
 
 /* sections */
 section{padding-block:clamp(3rem,7vw,5.5rem)}
@@ -179,8 +179,6 @@ textarea{min-height:7rem;resize:vertical}
 
 @media (max-width:52rem){
   .hero .wrap,.intro,.split,.split.rev,.quote .wrap,.cta-band .wrap,.authors,.foot-grid,.paths{grid-template-columns:minmax(0,1fr)}
-  .hero-art{max-width:24rem}
-  .hero-art img{max-height:26rem}
   .referto-list{grid-template-columns:minmax(0,1fr)}
   .referto-list li{display:block}
   .referto-list button{grid-column:auto}
